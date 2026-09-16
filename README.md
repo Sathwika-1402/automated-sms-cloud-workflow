@@ -18,7 +18,7 @@ Send "Your appointment is confirmed" to a customer phone number.
 
 | Feature | Twilio | AWS |
 |---|---|---|
-| Ease of use | Very easy | More setup |
+| **Ease of use** | Very easy | More setup |
 | Beginner friendly | Yes | Moderate |
 | SMS cost | Usually higher | Can be lower |
 | High-volume messaging | Good | Very good |
