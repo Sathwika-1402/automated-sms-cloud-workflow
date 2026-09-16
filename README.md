@@ -1,2 +1,8 @@
 # business-sms-api-project
-A practical comparison of Twilio and AWS for business SMS, with Python API testing.
+## Overview
+This project explores how businesses can send SMS messages using APIs.
+
+The two services compared are:
+- Twilio
+- AWS SMS
+
