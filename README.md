@@ -19,9 +19,7 @@ Business Application → SMS Provider → Customer Phone
 
 An API allows a program such as Python to request Twilio or AWS to send a message.
 
-Example:
-
-Send "Your appointment is confirmed" to a customer phone number.
+Example: Send "Your appointment is confirmed" to a customer phone number.
 
 ---
 
