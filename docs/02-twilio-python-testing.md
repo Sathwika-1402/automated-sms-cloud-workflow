@@ -28,7 +28,7 @@ Required packages:
 python -m pip install twilio
 python -m pip install python-dotenv
 
-Environment Variables
+**## Environment Variables**
 
 Twilio credentials were stored in a local .env file instead of writing them directly inside the Python code.
 
