@@ -25,3 +25,22 @@ Send "Your appointment is confirmed" to a customer phone number.
 | **High-volume messaging** | Good | Very good |
 | **Best fit** | Communication-focused applications | AWS-based environments |
 
+### Simple Summary
+
+**Twilio** is easier to set up and use.
+
+**AWS SMS** can be more cost-effective for large message volumes.
+
+---
+
+## 🧪 Practical Testing
+
+For the practical part of this project, I used:
+
+- Python
+- Visual Studio Code
+- Twilio Messaging API
+- Twilio Python SDK
+- Environment variables for credentials
+
+A test SMS was successfully sent using Python and the Twilio API.
