@@ -254,3 +254,10 @@ Through this project, I gained hands-on experience with:
 - Amazon EventBridge Scheduler
 - Local vs cloud execution
 - Event-driven cloud automation
+
+## 📚 Documentation
+
+- [Twilio vs AWS Comparison](docs/01-twilio-vs-aws.md)
+- [Twilio Python Testing](docs/02-twilio-python-testing.md)
+- [AWS Lambda Testing](docs/03-aws-lambda-testing.md)
+- [SMS Automation with EventBridge](docs/04-sms-automation.md)
