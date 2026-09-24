@@ -19,24 +19,31 @@ The project was completed in stages:
 ## 📌 Project Flow
 
 **Business SMS Requirement**
+
 ↓
 
 **Compare Twilio and AWS SMS**
+
 ↓
 
 **Select Twilio for SMS Delivery**
+
 ↓
 
 **Test with Twilio Trial**
+
 ↓
 
 **Build Python Integration**
+
 ↓
 
 **Test Manually from VS Code**
+
 ↓
 
 **Move Python Process to AWS Lambda**
+
 ↓
 
 **Test Manually from AWS Cloud**
