@@ -22,15 +22,7 @@ The project was completed in stages:
 
 ↓
 
-**Compare Twilio and AWS SMS**
-
-↓
-
 **Select Twilio for SMS Delivery**
-
-↓
-
-**Test with Twilio Trial**
 
 ↓
 
