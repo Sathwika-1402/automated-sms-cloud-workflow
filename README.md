@@ -9,36 +9,18 @@ This project started with a simple business requirement:
 The project was completed in stages:
 
 1. Compare Twilio and AWS SMS
-2. Choose an SMS provider
+2. Choose Twilio for SMS delivery
 3. Test SMS locally using Python
 4. Move the Python process to AWS Lambda
 5. Test SMS delivery from the cloud
+6. Automate Lambda using Amazon EventBridge Scheduler
+7. Successfully send SMS without manual execution
 
 ---
 
 ## 📌 Project Flow
 
-**Business SMS Requirement**
-
-↓
-
-**Select Twilio for SMS Delivery**
-
-↓
-
-**Build Python Integration**
-
-↓
-
-**Test Manually from VS Code**
-
-↓
-
-**Move Python Process to AWS Lambda**
-
-↓
-
-**Test Manually from AWS Cloud**
+**Business Requirement → Select Twilio → Build Python Integration → Test in VS Code → Move to AWS Lambda → Test in Cloud → Add EventBridge Scheduler → Automated SMS**
 
 ---
 
@@ -156,6 +138,7 @@ The function returned:
 ```text
 Hello from AWS Lambda!
 ```
+
 This confirmed that Python code could run successfully in AWS.
 
 After that:
@@ -171,13 +154,37 @@ The SMS was successfully received on the test phone.
 
 ## ☁️ Cloud Testing Flow
 
-The current working cloud flow is:
-
 **AWS Lambda → Python → Twilio API → SMS → Mobile Phone**
 
 The Lambda function was manually executed using the **Test** option in AWS.
 
 This confirmed that the SMS process could run successfully from the cloud.
+
+---
+
+## ⚡ Stage 3: Automating the SMS Workflow
+
+After confirming that the Lambda function worked manually, the next step was to remove the need to click **Test** every time.
+
+Amazon EventBridge Scheduler was used to automatically trigger the Lambda function at a scheduled time.
+
+A one-time schedule was created for the first automation test.
+
+### Automated Flow
+
+**EventBridge Scheduler → AWS Lambda → Python → Twilio API → SMS → Mobile Phone**
+
+When the scheduled time arrived:
+
+- EventBridge automatically triggered Lambda
+- Lambda ran the Python code
+- Python called the Twilio API
+- Twilio sent the SMS
+- The message was successfully received on the test phone
+
+No manual Lambda test was required.
+
+This confirmed that the SMS workflow could run automatically from the cloud.
 
 ---
 
@@ -205,5 +212,45 @@ Only sample code and general implementation details are included.
 - Twilio Messaging API
 - Twilio Python SDK
 - AWS Lambda
+- Amazon EventBridge Scheduler
 - AWS Environment Variables
+- AWS IAM
 - GitHub
+
+---
+
+## ✅ Current Project Status
+
+The project has successfully demonstrated:
+
+- Twilio vs AWS SMS comparison
+- Cost-conscious testing using a Twilio trial account
+- Python integration with Twilio
+- Manual SMS testing from Visual Studio Code
+- Successful local SMS delivery
+- Running Python code in AWS Lambda
+- Successful cloud-based SMS delivery
+- Creating an EventBridge Scheduler trigger
+- Automatically invoking AWS Lambda
+- Automatically sending an SMS without manually clicking Test
+
+---
+
+## 📚 What I Learned
+
+Through this project, I gained hands-on experience with:
+
+- Understanding a business messaging requirement
+- Comparing SMS providers
+- Considering cost before production deployment
+- Python programming
+- REST API integration
+- API authentication
+- Twilio SMS
+- Troubleshooting API errors
+- Environment variables
+- AWS Lambda
+- AWS IAM permissions
+- Amazon EventBridge Scheduler
+- Local vs cloud execution
+- Event-driven cloud automation
