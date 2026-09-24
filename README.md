@@ -163,7 +163,7 @@ The function returned:
 
 ```text
 Hello from AWS Lambda!
-
+```
 This confirmed that Python code could run successfully in AWS.
 
 After that:
