@@ -163,3 +163,55 @@ The function returned:
 
 ```text
 Hello from AWS Lambda!
+
+This confirmed that Python code could run successfully in AWS.
+
+After that:
+
+- Twilio credentials were stored using AWS environment variables
+- The SMS logic was added to the Lambda function
+- The function was deployed
+- The function was manually tested from AWS
+
+The SMS was successfully received on the test phone.
+
+---
+
+## ☁️ Cloud Testing Flow
+
+The current working cloud flow is:
+
+**AWS Lambda → Python → Twilio API → SMS → Mobile Phone**
+
+The Lambda function was manually executed using the **Test** option in AWS.
+
+This confirmed that the SMS process could run successfully from the cloud.
+
+---
+
+## 🔐 Security
+
+Sensitive information is kept separate from the public source code.
+
+The repository does not contain:
+
+- Authentication tokens
+- Real Account SID values
+- Real phone numbers
+- Company information
+- Customer information
+
+Only sample code and general implementation details are included.
+
+---
+
+## 🛠 Technologies Used
+
+- Python
+- Visual Studio Code
+- REST APIs
+- Twilio Messaging API
+- Twilio Python SDK
+- AWS Lambda
+- AWS Environment Variables
+- GitHub
